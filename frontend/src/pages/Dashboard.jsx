@@ -1,13 +1,14 @@
-import { Appbar } from "../components/Appbar"
+import TopBar from "../components/Appbar"
 import { Balance } from "../components/Balance"
-import { Users } from "../components/Users"
+import Sidebar from "../components/Sidebar"
 
 export const Dashboard = () => {
     return <div>
-        <Appbar />
+        <TopBar />
+        <Sidebar />
         <div className="m-8">
             <Balance value={"10,000"} />
-            <Users />
+            
         </div>
     </div>
 }

@@ -1,18 +1,29 @@
 
-export const Appbar = () => {
-    return <div className="shadow h-14 flex justify-between">
-        <div className="flex flex-col justify-center h-full ml-4">
-            PayTM App
-        </div>
-        <div className="flex">
-            <div className="flex flex-col justify-center h-full mr-4">
-                Hello
-            </div>
-            <div className="rounded-full h-12 w-12 bg-slate-200 flex justify-center mt-1 mr-2">
-                <div className="flex flex-col justify-center h-full text-xl">
-                    U
-                </div>
-            </div>
-        </div>
+
+const TopBar = () => (
+  <div className="bg-gray-800 text-white flex justify-between items-center p-4">
+    <div className="flex items-center">
+      <img src="./logo.png" alt="Logo" className="h-8 w-8 mr-2" />
+      <span className="font-bold text-xl">EasyPay</span>
     </div>
-}
+    <div className="flex items-center">
+      <a href="#" className="mr-4 hover:text-gray-300">Home</a>
+      <a href="#" className="mr-4 hover:text-gray-300">Transactions</a>
+      <div className="relative">
+        <button className="flex items-center focus:outline-none">
+          <img src="./logo.png" alt="Logo" />
+          <span className="ml-2">John Doe</span>
+        </button>
+        <div className="absolute right-0 mt-2 w-48 bg-white rounded-lg shadow-lg hidden">
+          <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Profile</a>
+          <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Settings</a>
+          <a href="#" className="block px-4 py-2 text-gray-800 hover:bg-gray-200">Logout</a>
+        </div>
+      </div>
+    </div>
+  </div>
+);
+
+export default TopBar;
+
+// className="h-8 w-8 rounded-full"

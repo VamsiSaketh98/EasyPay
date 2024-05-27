@@ -24,11 +24,11 @@ const PaymentDashboard = () => {
             <h2 className="text-lg font-bold mb-4">Transaction History</h2>
             <ul>
               <li className="flex justify-between mb-2">
-                <span>Payment to John Doe</span>
+                <span>Payment to Elon Musk</span>
                 <span>₹500</span>
               </li>
               <li className="flex justify-between mb-2">
-                <span>Payment to Jane Smith</span>
+                <span>Payment to Will Smith</span>
                 <span>₹300</span>
               </li>
               <li className="flex justify-between">
